@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Таймер</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""><!--favicon-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--favicon end-->
+    <link rel="stylesheet" type="text/css" href="assets/css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+<!-- Yandex map script -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=dad86943-dfef-45bd-9c5e-c404323cb093&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <section>
+          <form class="timer">
+            <div class="timer__container container">
+              <div class="timer__hour timer__value">
+                <input value="00" type="number" min="0" max="23" autocomplete="off"><span>ч</span>
+              </div>
+              <div class="timer__min timer__value">
+                <input value="05" type="number" min="0" max="59" autocomplete="off"><span>м</span>
+              </div>
+              <div class="timer__sec timer__value">
+                <input value="00" type="number" min="0" max="59" autocomplete="off"><span>с</span>
+              </div>
+              <button class="timer__start" type="submit">Запустить</button>
+              <button class="timer__pause" type="button">Пауза</button>
+              <button class="timer__reset" type="button">Сбросить</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>
