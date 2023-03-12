@@ -1,0 +1,18 @@
+form.timer
+  .timer__container.container
+    .timer__hour.timer__value
+      input(value="00" type="number" min="0" max="23" autocomplete="off")
+      span ч
+
+    .timer__min.timer__value
+      input(value="05" type="number" min="0" max="59" autocomplete="off")
+      span м
+
+    .timer__sec.timer__value
+      input(value="00" type="number" min="0" max="59" autocomplete="off")
+      span с
+
+    button.timer__start(type="submit") Запустить
+    button.timer__pause(type="button") Пауза
+    button.timer__reset(type="button") Сбросить
+

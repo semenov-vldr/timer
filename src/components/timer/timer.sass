@@ -1,0 +1,49 @@
+.timer
+  padding-top: 100px
+
+  &__container
+    display: flex
+    gap: 16px
+    justify-content: center
+    flex-wrap: wrap
+    @media (max-width: 768px)
+      display: grid
+      gap: 24px 16px
+      grid-template-columns: repeat(3, auto)
+
+  &__value
+    display: flex
+    gap: 8px
+    align-items: flex-end
+    input
+      border: none
+      border-radius: 0
+      outline: none
+      border-bottom: 2px solid currentColor
+      text-align: center
+      font-size: 32px
+      font-weight: 500
+      color: #55697a
+      width: 80px
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+        -moz-appearance: textfield
+      @media (max-width: 768px)
+        font-size: 24px
+        width: 50px
+
+  button
+    background-color: #55697a
+    color: #fff
+    padding: 4px 8px
+    border-radius: 8px
+    cursor: pointer
+    transition: $transition
+    &:hover
+      opacity: 0.8
+    &:disabled
+      opacity: 0.6
+      cursor: auto
+
